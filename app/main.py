@@ -1,8 +1,8 @@
 class Distance:
-    def __init__(self, km: float) -> None:
+    def __init__(self, km: int | float | Distance) -> None:
         self.km = km
 
-    def get_value(self, other: int | float) -> float:
+    def get_value(self, other: iint | float | Distance) -> float:
         if isinstance(other, Distance):
             return other.km
         return other
